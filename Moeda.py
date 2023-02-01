@@ -1,4 +1,7 @@
 import requests
+from tkinter import *
+
+
 
 def pegar_cotacoes():
 
