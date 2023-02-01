@@ -14,3 +14,21 @@ def pegar_cotacoes():
     print(cotacao_dolar)
 
 pegar_cotacoes()
+
+#interface grifica
+
+janela = Tk()
+
+janela.title('Casa da Moeda')
+texto_inicio = Label(janela, text='Bem-Vindo ao cotador de moedas.Clique no botão para ver.')
+texto_inicio.grid(column=0, row=0)
+
+botao = Button(janela, text='Buscar Cotação', command=pegar_cotacoes)
+botao.grid(column=0, row=1)
+
+
+
+
+
+
+janela.mainloop()
